@@ -21,7 +21,10 @@ The BuildXL documentation main page is [here](Documentation/INDEX.md).
 See the Examples/ folder for basic project examples. See the [Demos](Public/Src/Demos/Demos.md) page for information about various technical demos like using the process sandboxing code.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/master
 # Building the Code
 
 ## Build Status - Azure DevOps Pipelines
@@ -40,6 +43,7 @@ Note you do not need administrator (elevated) privileges for your console window
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> fixed the VS workloads needed to build the repo (#23)
 =======
 ## MacOS
@@ -53,6 +57,9 @@ If you just want to do a 'compile' without running tests you can use: `bxl.cmd -
 =======
 If you just want to do a 'compile' without running tests you can use: `bxl.cmd -minimal` after which you can find the binaries in `out\bin\debug\net472`.
 >>>>>>> [Doc] change net461 to net472, add CMake front-end to the list (#49)
+=======
+If you just want to do a 'compile' without running tests you can use: `bxl.cmd -minimal` after which you can find the binaries in `out\bin\debug\net472`.
+>>>>>>> origin/master
 
 Other build types can be performed as well:
 * `bxl -deployConfig release` : Retail build

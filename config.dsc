@@ -47,7 +47,10 @@ config({
             repositories: importFile(f`config.microsoftInternal.dsc`).isMicrosoftInternal
                 ? {
                     "BuildXL.Selfhost": "https://pkgs.dev.azure.com/cloudbuild/_packaging/BuildXL.Selfhost/nuget/v3/index.json",
+<<<<<<< HEAD
                     "BuildXL.Selfhost.MyGet": "https://pkgs.dev.azure.com/cloudbuild/_packaging/BuildXL.Selfhost.MyGet/nuget/v3/index.json",
+=======
+>>>>>>> origin/master
                   }
                 : {
                     "buildxl-selfhost" : "https://dotnet.myget.org/F/buildxl-selfhost/api/v3/index.json",

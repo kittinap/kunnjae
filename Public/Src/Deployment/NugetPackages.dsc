@@ -27,6 +27,7 @@ namespace NugetPackages {
         }).deployment,
     });
 
+<<<<<<< HEAD
     const net461 = pack({
         id: `${packageNamePrefix}.net461`,
         deployment: BuildXL.withQualifier({
@@ -36,6 +37,8 @@ namespace NugetPackages {
         }).deployment,
     });
 
+=======
+>>>>>>> origin/master
     const winX64 = pack({
         id: `${packageNamePrefix}.win-x64`,
         deployment: BuildXL.withQualifier({
@@ -120,7 +123,13 @@ namespace NugetPackages {
         contents: [
             ...addIfLazy(Context.getCurrentHost().os === "win", () => [
                 net472,
+<<<<<<< HEAD
                 ...(BuildXLSdk.Flags.genVSSolution ? [] : [net461, winX64])
+=======
+                ...addIf(!BuildXLSdk.Flags.genVSSolution,
+                    winX64
+                ),
+>>>>>>> origin/master
             ]),
             osxX64,
             sdks,
